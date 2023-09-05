@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box
+}
+img{display: block}
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+
+:root{
+    /* Color Sheet */
+    --white:hsl(0, 0%, 100%);
+    --LightGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --DarkBlue: hsl(218, 44%, 22%);
+}
+body{
+    font-family: 'EB Garamond';
+    background-color: var(--LightGray);
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+}
+
+section{
+    width:425px;
+    height: 700px;
+    background-color: var(--white);
+    border-radius: 4%;
+    padding: 20px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+p{
+    padding: 0 20px;
+    margin-top: 15px;
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-weight: 400;
+
+}
+img{
+    width:100%;
+    height: 100%;
+    background-color:var(--GrayishBlue);
+    box-sizing: border-box;
+    border-radius: 4%;
+}
+
+h2{
+    padding: 0 20px;
+    margin-bottom: 0;
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 375px){
+    section{
+        width:100%;
+        height: 80%;
+        background-color: var(--white);
+        border-radius: 4%;
+        padding: 20px;
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+}
